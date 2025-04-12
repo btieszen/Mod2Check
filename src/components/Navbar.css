@@ -1,0 +1,17 @@
+.nav-container{
+    display:'flex';
+    gap: 1rem;
+    align-items:center;
+    padding:1rem;
+    background-color: rgba(240, 240, 15, 0.929);
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+.link{
+    color:rgb(0, 7, 9);
+    text-align:center;
+    padding:14px 20px;
+    text-decoration: none;
+    font-size: 20px;
+}
