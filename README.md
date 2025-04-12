@@ -1,54 +1,28 @@
-# React + TypeScript + Vite
-
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
-
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
-
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+Mod2 Module Check
+1.  first went to firebase and set up new project and authorization
+2.  In firebase also set up database to include products and order information
+3.  In Module2/check/check:
+   1:   Installed all dependencies
+    2:  Created folder lib inside created folder firebase and file firebase.ts
+    3:  This has the configuration to link the app to firebase
+    4: In Context folder file AuthContext.tsx this this set user
+    In Components Folder
+        AddDataform.tsx  this allows the user to add products including product and price
+    this aslo gets stored in firebase
+        AddOrderForm.tsx alows the user to add orders to a cart. they enter there name, product,price,quantity.
+    This  aslo gets timestamped and added to firebase
+        DisplayData.tsx diplays the product info including name and price
+    this is delived from firebase
+        DisplayOrder.tsx display the order from firebase there is also a delete order button and a checkout button
+    It also displays the toal amount if they order more that 1 item and the time it was ordered
+    Navbar.css has styling for the navbar
+    Navbar.tsx is the navigation bar
+    Under pages:
+    Login.tsx is the login page that the user will loginto
+    Logout. handles logout
+    Profile.tsx displays the users profile and alows for updates
+    Register.tsx is where the user will first sign up to use the page
+    the data is stored in firebase
+    
+        
+    
